@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pub Quiz</title>
     <link rel="stylesheet" href="assets/css/style.css">
-        <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
 </head>
+
 <body>
     <div class="container">
-        <div id="wapper">
-            <h1>Pub Quiz</h1>
-            <br>
-            <div id="question"></div>
-            <button id="anwers1" onckick="checkAnswer(0)"></button>
-            <button id="anwers2" onckick="checkAnswer(1)"></button>
-            <button id="anwers3" onckick="checkAnswer(2)"></button>
-            <button id="anwers4" onckick="checkAnswer(3)"></button>
-            <hr>
-            <div>Score: <span id="score">0</span></div>
-            <div id="playagain">
-                <p>Are you brave enough to again?</p>
-                <button onclick="endgameOption(0)">Yes</button>
-                <button onclick="endgameOption(1)">No, get me outta here!</button>
-
+        <div id="game" class="justify-center flex-column">
+            <h2 id="quesiton">What is the answer to this questions?</h2>
+            <div class="choice-container">
+                <p class="choice-prefix">A</p>
+                <p class="choice-text">Choice 1</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">B</p>
+                <p class="choice-text">Choice 2</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">C</p>
+                <p class="choice-text">Choice 3</p>
+            </div>
+            <div class="choice-container">
+                <p class="choice-prefix">D</p>
+                <p class="choice-text">Choice 4</p>
             </div>
         </div>
     </div>
-   <script src="assets/js/script.js"></script> 
+    <script src="assets/js/script.js"></script>
 </body>
+
 </html>
